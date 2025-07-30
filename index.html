@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <style>
+    <!-- <style>
         .text-yellow-900{
             color: rgb(251, 251, 0);
         }
@@ -30,7 +30,7 @@
         .font-timesnewroman{
             font-family: "Lucida Console", "Courier New", monospace;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <div class="bg-yellow-100 font-timesnewroman border rounded-xl">
@@ -43,6 +43,15 @@
         <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, error.</h2>
     </div>
 
+
+    <div class="bg-blue-300">Hello World</div>
+    <input type="button" class="bg-blue-300 border rounded text-white p-1 active:bg-black active:text-red-500" value="Click mee" />
+    <button type="button" class="bg-blue-300 border rounded text-white active:bg-red-500">Click mee</button>
+
+
+    <input type="text" class="w-[100px] border rounded focus:bg-blue-200 focus:text-cyan-900 hover:border-red-600 hover:border-[4px]">
+
+    <a href="#" target="_blank" class="visited:text-red-600 text-blue-600">Google</a>
     <!-- <div class="lorem">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, consequatur officiis ipsa voluptate cupiditate perspiciatis sapiente, neque nam tenetur debitis maxime. Quo nostrum molestiae voluptates impedit, asperiores quos itaque similique?
         </p>
@@ -51,5 +60,22 @@
 
         <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, error.</h2>
     </div> -->
+        <button type="button" class="group">Hello
+            <li class="group-focus:text-blue-600">Apple</li>
+            <li class="group-focus:text-red-500">Mango</li>
+            <li>kiwi</li>
+            <li class="group-focus:text-gray-400">banana</li>
+        </button>
+
+        <form action="" id="myForm">
+            <input type="text" class="border w-100px" name="random" id="">
+            <input type="submit" class="border" onclick="" value="submit">
+        </form>
+
+        <script>
+            var form = document.getElementById("myForm");
+            function handleForm(event) { event.preventDefault(); console.log("hello") } 
+            form.addEventListener('submit', handleForm);
+        </script>
 </body>
 </html>
