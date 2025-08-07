@@ -4,11 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+        }
+    </script>
 </head>
 <body>
-    <div class="flex flex-wrap-reverse gap-4">
+    <!-- <div class="flex flex-wrap-reverse gap-4">
         <div class="w-[300px] bg-pink-200">1</div>
         <div class="w-[300px] bg-pink-300">2</div>
         <div class="w-[300px] bg-pink-400">3</div>
@@ -28,7 +32,11 @@
         <div class="col-span-2 bg-purple-700">Hello</div>
         <div class="col-span-2 bg-purple-800">Hello</div>
         <div class="col-span-2 bg-purple-900">Hello</div>
-    </div>
+    </div> -->
 
+
+    <div class="bg-sky-200 sm:bg-sky-300 md:bg-red-300 lg:bg-red-400 xl:bg-lime-400 2xl:bg-lime-500 dark:bg-orange-400 dark:text-white">Hello World</div>
+
+    <input type="button" value="click mee" onclick="document.documentElement.classList.toggle('dark')" class="border-2 border-pink-400 bg-slate-300 cursor-pointer">
 </body>
 </html>
